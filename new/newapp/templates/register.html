@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>register</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+    <label for="">Username</label>
+    <input type="text" name="username" value="" placeholder=""><br>
+    <label for="">Name</label>
+    <input type="text" name="name" value=""><br>
+    <label for="">Email</label>
+    <input type="email" name="email" value=""><br>
+    <label for="">Password</label>
+    <input type="password" name="password" value=""><br>
+    <label for="user">User</label>
+    <select name="usertype" id="user">
+    <option value="Jobseeker">Jobseeker</option>
+    <option value="recruiter">Recruiter</option>
+    </select><br>
+    <input type="submit" value="register">
+
+    </form>
+</body>
+</html>
